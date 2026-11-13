@@ -1,4 +1,4 @@
-import {mountPhoneSelector,phoneColor} from './phone-models.js?v=13b';
+import {mountPhoneSelector,phoneColor} from './phone-models.js?v=36';
 const text=(zh,en)=>document.documentElement.lang.startsWith('en')?en:zh;
 let catalog,chosenModel=null,chosenColor='blue',pendingAction=null;
 const catalogPromise=fetch('./flow-assets/data.json').then(r=>{if(!r.ok)throw Error('catalog');return r.json();}).then(v=>catalog=v);

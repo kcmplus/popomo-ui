@@ -11,7 +11,7 @@ class Handler(SimpleHTTPRequestHandler):
   super().do_GET()
 server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
 url='http://127.0.0.1:'+str(server.server_port)+'/'
-print('POPOMO V35: '+url+' | Ctrl+C to stop',flush=True)
+print('POPOMO V38: '+url+' | Ctrl+C to stop',flush=True)
 webbrowser.open(url)
 try:server.serve_forever()
 except KeyboardInterrupt:pass

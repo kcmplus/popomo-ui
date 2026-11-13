@@ -119,6 +119,21 @@
     {
       "version": 35,
       "description": "Normalize desktop and mobile submenu links/actions; Find a printer matches Contact us and Partner with us, remove top-level dot and underline decoration."
+    },
+    {
+      "version": 36,
+      "rollback_commit": "e75f21a76cb3466ee4f04288e3c7e3ac6ebbe4f9",
+      "description": "Fix direct background crop/pan with fill, fit, blurred fill and reset; shared editor/review/export geometry; undo/redo; stable persistent locale with early-switch handling; unblock homepage header hit targets; clarify phone body color; mobile composition controls."
+    },
+    {
+      "version": 37,
+      "rollback_commit": "c161d99817cda413964fd7e3d4910779f1369ba5",
+      "description": "Single authoritative locale state for early input/change and mobile controls; defer homepage localization from head before first content reveal, preserve selection through delayed modules/reload and bfcache; prevent automatic browser translation of app-managed bilingual content; invalidate changed module graph; repair printer list render regression. Chrome slow initialization, 10-second stability, mobile and 7-page language regression verified."
+    },
+    {
+      "version": 38,
+      "rollback_commit": "29228538180c1c2a56b25a6af41bca61b6acdcd7",
+      "description": "Add visible Crop photo entry and independent phone-ratio crop dialog; non-destructive drag, zoom/pinch, rotate, reset, apply/cancel, keyboard positioning and undo/redo; full-screen mobile layout with fixed actions. Verify unchanged original, cancel isolation, review persistence and mobile viewport."
     }
   ]
 }

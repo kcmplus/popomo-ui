@@ -1,4 +1,4 @@
-import {printers,choosePrinter} from './printers.js?v=design-device-1';
+import {printers,choosePrinter} from './printers.js?v=37';
 const key='popomo-design-printer';
 export function resolvePrinter(list,id){if(list.length===1)return list[0];return list.find(p=>p.id===id)||list.find(p=>p.primary)||list[0]||null;}
 export function getDesignPrinter(id){let preferred=id;try{preferred=preferred||sessionStorage.getItem(key);}catch{}return resolvePrinter(printers,preferred);}

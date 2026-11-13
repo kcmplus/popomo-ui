@@ -1,4 +1,4 @@
-import {printers,choosePrinter,getPrinter,navigationURL} from './printers.js?v=printer-cards-2';
+import {printers,choosePrinter,getPrinter,navigationURL} from './printers.js?v=37';
 const deliveryFee='US$'+((window.PopomoOrders?.deliveryShippingCents??400)/100).toFixed(2);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function fulfillmentReady(f){return f?.method==='pickup'?!!getPrinter(f.deviceId):f?.method==='delivery'&&f.addressSaved!==false&&!!(f.address?.recipient&&f.address?.phone&&f.address?.region&&f.address?.street);}

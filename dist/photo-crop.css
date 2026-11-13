@@ -1,0 +1,18 @@
+/* Dedicated non-destructive photo crop workspace. */
+dialog.photo-crop-dialog{width:min(620px,calc(100vw - 40px));height:min(820px,calc(100dvh - 40px));max-height:calc(100dvh - 40px);max-width:none;padding:0;border:1px solid #fff;border-radius:24px;background:linear-gradient(145deg,#fff9ff,#f0e2ff);box-shadow:0 24px 80px #1e063844;color:#100519;overflow:hidden}
+dialog.photo-crop-dialog[open]{display:flex;flex-direction:column}
+dialog.photo-crop-dialog::backdrop{background:#16032680;backdrop-filter:blur(8px)}
+.photo-crop-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;padding:20px 24px;flex:none;border-bottom:1px solid #dac2ed;background:#ffffff90}
+.photo-crop-head h2{margin:0;font-size:24px;line-height:1.25}.photo-crop-head p{margin:8px 0 0;font-size:14px;line-height:1.5;color:#705b80}
+.photo-crop-head>button{width:44px;height:44px;flex:none;display:grid;place-items:center;border:1px solid #e2cfee;border-radius:12px;background:#ffffffb8;color:#7021b0;padding:10px}.photo-crop-head svg{width:22px;height:22px}
+.photo-crop-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding:16px;overflow:hidden;background:radial-gradient(ellipse at 70% 35%,#dab5ff70,transparent 70%)}
+.photo-crop-stage canvas{display:block;object-fit:contain;max-width:100%;max-height:100%;width:auto;height:100%;touch-action:none;cursor:grab;filter:drop-shadow(0 8px 12px #20073520)}
+.photo-crop-stage canvas:active{cursor:grabbing}.photo-crop-stage canvas:focus-visible{outline:2px solid #a234fd;outline-offset:4px}
+.photo-crop-controls{display:grid;grid-template-columns:auto minmax(0,1fr) 52px;align-items:center;gap:12px;padding:16px 24px;background:#ffffff80;border-top:1px solid #e2cfee;flex:none;font-size:14px}
+.photo-crop-controls input{min-width:0;width:100%;accent-color:#a234fd;height:28px}.photo-crop-controls output{text-align:right;font-variant-numeric:tabular-nums}
+.photo-crop-tools{grid-column:1/-1;display:flex;gap:10px}.photo-crop-tools button{flex:1;min-height:40px;border:1px solid #d7b6f1;background:#ffffffb0;border-radius:10px;color:#7021b0;font-size:14px}
+.photo-crop-footer{display:flex;gap:12px;padding:16px 24px max(16px,env(safe-area-inset-bottom));border-top:1px solid #dac2ed;flex:none;background:#ffffffa0}.photo-crop-footer button{flex:1;min-width:0;min-height:46px;margin:0;font-size:15px}
+.ed-stage-toolbar .ed-crop-photo{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid #fff;border-radius:11px;background:#ffffffc0;color:#7021b0;font-size:14px;pointer-events:auto;white-space:nowrap}.ed-crop-photo svg{width:20px;height:20px}
+.ed-background-controls [data-photo-crop]{display:flex;justify-content:center;align-items:center;gap:6px}.ed-background-controls [data-photo-crop] svg{width:17px;height:17px}
+@media(max-width:760px){dialog.photo-crop-dialog{width:100vw;height:100dvh;max-height:100dvh;max-width:100vw;border-radius:0;margin:0;border:0}.photo-crop-head{padding:16px}.photo-crop-head h2{font-size:21px}.photo-crop-controls{padding:12px 16px}.photo-crop-footer{padding:12px 16px max(12px,env(safe-area-inset-bottom))}.photo-crop-stage{padding:12px}.ed-stage-toolbar .ed-crop-photo{font-size:13px;padding:7px 9px;max-width:calc(100% - 116px)}.ed-background-controls{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(prefers-reduced-motion:no-preference){.photo-crop-tools button:hover{background:#efddff}.photo-crop-footer button{transition:transform .15s ease}.photo-crop-footer button:active{transform:translateY(1px)}}
