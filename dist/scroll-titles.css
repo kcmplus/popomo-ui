@@ -1,0 +1,7 @@
+.scroll-title-line{display:block!important;width:fit-content;max-width:100%;margin:0 auto}
+.studio-title .scroll-title-line{margin:0}
+body.home-page .scroll-title-line{font:inherit!important;letter-spacing:inherit!important}
+body.home-page .scroll-ink{color:transparent!important;-webkit-text-fill-color:transparent;background-image:linear-gradient(90deg,var(--ink-color) 0 var(--ink-fill,100%),var(--ink-muted) var(--ink-fill,100%) 100%)!important;background-clip:text!important;-webkit-background-clip:text!important;background-repeat:no-repeat}
+body.home-page .scroll-ink svg{color:var(--ink-color);-webkit-text-fill-color:initial}
+@media(prefers-reduced-motion:reduce){body.home-page .scroll-ink{--ink-fill:100%!important}}
+.studio-title h2>.scroll-title-line{color:#07000e}

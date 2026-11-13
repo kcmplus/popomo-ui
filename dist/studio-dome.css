@@ -1,0 +1,35 @@
+/* Original Aimo transparent dome plate, with POPOMO's own content and actions. */
+body.home-page .v2-curve{display:none!important}
+body.home-page .v2-studio.studio-dome{position:relative;z-index:6;isolation:isolate;display:block;width:100%!important;max-width:none!important;margin:-238px 0 0;padding:116px 24px 72px;background:none!important;color:#07000e;min-height:492px}
+.studio-dome-background{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;max-width:none;z-index:-1;pointer-events:none;user-select:none}
+.studio-dome-inner{max-width:980px;margin:0 auto;font-family:'DM Sans','PingFang SC','Microsoft YaHei',sans-serif}
+.studio-dome-accessible{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.dome-row-one{display:flex;align-items:center;justify-content:center;gap:20px;margin:0 0 14px}
+.dome-word{display:block;font-family:'DM Sans','PingFang SC','Microsoft YaHei',sans-serif;font-weight:800;font-size:clamp(64px,5.4vw,82px);line-height:1.08;letter-spacing:-3px;white-space:nowrap;color:#07000e}
+.dome-video{position:relative;display:block;flex:none;width:128px;height:84px;border:0;border-radius:9px;padding:0;overflow:hidden;background:#412c67;cursor:pointer;transition:transform .2s}
+.dome-video>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 36%}
+.dome-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;border:3px solid #fff;border-radius:50%;width:43px;height:43px;background:#07000e25;color:white}
+.dome-play svg{width:24px;height:24px;fill:currentColor;stroke:none;margin-left:3px}
+.dome-video:hover{transform:scale(1.035)}.dome-video:focus-visible{outline:3px solid #a234fd;outline-offset:6px}
+.dome-row-two{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;max-width:900px;margin:0 auto 18px}
+.dome-copy{font-size:18px;line-height:1.55;font-weight:400;margin:0;max-width:470px;color:#07000e}
+.dome-row-three{display:flex;justify-content:center;align-items:center;gap:22px}
+.dome-methods{display:flex;align-items:center;gap:18px;flex:none}
+.dome-thumbnails{display:flex;padding-right:0;align-items:center;isolation:isolate}
+.dome-thumbnails img{position:relative;display:block;width:61px;height:61px;border:3px solid #fff;border-radius:50%;object-fit:cover;object-position:center;background:#eee4fa}
+.dome-thumbnails img+img{margin-left:-19px}.dome-thumbnails img:nth-child(2){z-index:1}.dome-thumbnails img:nth-child(3){z-index:2}
+.dome-methods p{font-size:14px;line-height:1.6;margin:0;white-space:nowrap}
+.dome-methods p>span{font-weight:600;display:block;color:#07000e}
+.dome-methods strong{display:block;color:#a234fd;font-size:14px;font-weight:800}
+.dome-studio{font-size:82px}
+.dome-action{display:flex;align-items:center;justify-content:center;flex:none;gap:20px;padding:10px 10px 10px 24px;min-height:63px;border:3px solid white;border-radius:8px;background:#a234fd;box-shadow:0 4px 0 #5d00f727;color:#fff;font:600 16px 'DM Sans','PingFang SC',sans-serif;cursor:pointer;transition:background .2s}
+.dome-action i{display:grid;place-items:center;width:39px;height:39px;border-radius:5px;background:white;color:#07000e;box-shadow:0 3px 0 #5d00f733}
+.dome-action i svg{display:block;width:24px;height:24px;transition:transform .2s}
+.dome-action:hover{background:#5d00f7}.dome-action:hover i svg{transform:translateX(3px)}
+body.home-page .studio-dome+.collection{border-top:0;padding-top:85px}
+@media(min-width:761px) and (max-width:1100px){body.home-page .v2-studio.studio-dome{margin-top:-200px;padding:106px 30px 60px;min-height:440px}.studio-dome-inner{max-width:840px}.dome-word{font-size:64px;letter-spacing:-2px}.dome-video{width:112px;height:74px}.dome-row-one{gap:18px}.dome-row-two{gap:26px}.dome-copy{font-size:16px;line-height:1.6}.dome-row-three{gap:18px}.dome-thumbnails img{width:51px;height:51px}.dome-thumbnails img+img{margin-left:-17px}.dome-methods{gap:12px}.dome-methods p,.dome-methods strong{font-size:12px}.dome-action{gap:12px;min-height:58px;padding-left:17px;font-size:14px}.dome-action i{width:34px;height:34px}.dome-studio{font-size:66px}}
+@media(max-width:760px){body.home-page .v2-studio.studio-dome{margin-top:-108px;min-height:0;padding:100px 20px 42px;overflow:hidden}.studio-dome-background{width:190%;left:-45%;right:auto;height:100%;object-fit:fill}.studio-dome-inner{width:100%;max-width:420px}.dome-row-one{gap:11px;margin-bottom:18px}.dome-word{font-size:34px;letter-spacing:-1.3px;line-height:1.1}.dome-video{width:82px;height:54px;border-radius:6px}.dome-play{width:32px;height:32px;border-width:2px}.dome-play svg{width:19px;height:19px}.dome-row-two{display:flex;flex-direction:column;gap:15px;text-align:center;margin-bottom:18px}.dome-design{font-size:51px;letter-spacing:-2px}.dome-copy{font-size:15px;line-height:1.7;max-width:345px}.dome-copy br{display:none}.dome-row-three{display:grid;grid-template-columns:1fr;gap:18px;justify-items:center}.dome-studio{font-size:57px;letter-spacing:-2px;order:0}.dome-action{order:1;min-height:57px;font-size:15px;padding:8px 9px 8px 20px;gap:21px;border-radius:7px}.dome-action i{width:34px;height:34px}.dome-methods{order:2;gap:14px;margin-top:4px}.dome-thumbnails img{width:45px;height:45px;border-width:2px}.dome-thumbnails img+img{margin-left:-14px}.dome-methods p,.dome-methods strong{font-size:13px}.dome-methods p>span{font-size:13px}body.home-page .studio-dome+.collection{padding-top:46px}}
+@media(max-width:360px){.dome-row-one{gap:9px}.dome-row-one .dome-word{font-size:30px}.dome-video{width:74px;height:49px}.dome-design{font-size:46px}}
+@media(prefers-reduced-motion:reduce){.dome-video,.dome-action,.dome-action i svg{transition:none!important}}
+body.home-page .collection{border-top:0;padding-top:85px}
+@media(max-width:760px){body.home-page .collection{padding-top:46px}}

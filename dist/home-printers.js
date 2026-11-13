@@ -1,0 +1,2 @@
+import {mountPrinterList} from './printers.js?v=printer-cards-2';
+const root=document.querySelector('#home-printers');function render(){mountPrinterList(root,{limit:3});const en=document.documentElement.lang.startsWith('en');document.querySelector('.home-printers-heading h2').textContent=en?'Make it real in New York.':'在纽约，把设计印出来。';document.querySelector('.home-printers-heading>a').textContent=en?'All print locations ↗':'查看全部设备 ↗';}new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});render();

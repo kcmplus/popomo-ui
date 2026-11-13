@@ -1,0 +1,43 @@
+/* V22: shared navigation and saved-work glass surfaces. */
+body .mn-drawer{--button-main:#100519;color:#100519;background:#f5ebff;border-color:#e3c9f5;box-shadow:-18px 0 60px #22043526;width:min(360px,90vw)}
+body .mn-drawer>.mn-panel{background:linear-gradient(145deg,#ffffffdf,#f3e5ffd9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);min-height:100%;color:#100519}
+body .mn-drawer-head,body .mn-drawer-footer{border-color:#dfc9ef}
+body .mn-drawer-head{padding:20px 20px 16px}
+body .mn-drawer .mn-wordmark{color:#100519}
+body .mn-links{padding:20px 14px;gap:7px}
+body .mn-links>a,body .mn-links>button{min-height:52px;padding:12px 14px;border:1px solid transparent;border-radius:12px;font-size:16px;color:#100519;transition:background .18s,border-color .18s,transform .18s}
+body .mn-links :is(a,button)[aria-current=page]{background:#ead7fab0;border-color:#d9b5ef;color:#7021b0}
+body .mn-links i{color:#7021b0;transition:transform .2s}
+body .mn-drawer-footer{padding:20px 22px calc(22px + env(safe-area-inset-bottom))}
+body .mn-language-label,body .mn-drawer-footer p{color:#685673;font-size:14px}
+body .mn-language{background:#e8d6f5a8;border:1px solid #ffffffc9;padding:5px;border-radius:12px;gap:5px}
+body .mn-language button{min-height:44px;border-radius:9px;color:#100519;font-size:15px;transition:background .18s,box-shadow .18s}
+body .mn-language button[aria-pressed=true]{background:#a234fd;color:#fff;box-shadow:0 3px 9px #7017b92b}
+body .mn-shade{background:#16062266;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+body .mn-close{border:1px solid #ffffffbd;background:#ffffff6b;color:#100519;transition:background .18s,transform .18s}
+body :is(.mn-drawer,.mn-info) :focus-visible{outline:2px solid #a234fd;outline-offset:3px}
+body :is(.mn-actions>a,.mn-actions>button,.pc-account):hover{background:#edddfa;box-shadow:none}
+body .mn-info{background:linear-gradient(135deg,#fffffff0,#f2e5fff0);border-color:#fff;color:#100519;box-shadow:0 18px 55px #2a07452b;backdrop-filter:blur(10px)}
+body .mn-info p{color:#685673}body .mn-info-action{background:#a234fd;color:white}
+body.works-page{--ink:#100519;--muted:#685673;--paper:#faf6ff;--line:#e1ceee;--button-main:#100519;color:#100519;background-color:#f5ebff;background-image:linear-gradient(#ffffff63,#ffffff63),url('assets/backgrounds/bg-ss1-h1-.webp');background-position:center top;background-size:cover;background-repeat:no-repeat;min-height:100dvh}
+.works-page #works-main{padding-top:38px}
+.works-page .works-heading p{color:#7021b0;font-size:14px}
+.works-page .works-heading>div>span{color:#685673;font-size:14px}
+.works-page .works-card{background:#ffffffad;border:1px solid #ffffffed;border-radius:18px;box-shadow:0 8px 26px #32104c0d,inset 0 1px 0 #fff;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:transform .2s,box-shadow .2s,border-color .2s;min-width:0}
+.works-page .works-cover{background:radial-gradient(ellipse at 25% 10%,#fff9,transparent 70%),linear-gradient(135deg,#efe2ffb8,#dfbff5a3);border-bottom:1px solid #ffffffb3}
+.works-page .works-render{filter:drop-shadow(5px 9px 12px #2a064626)}
+.works-page .works-card-body{background:#ffffff70;padding:19px}
+.works-page .works-card h2{color:#100519;overflow-wrap:anywhere}
+.works-page .works-model{color:#685673;font-size:14px}
+.works-page .works-cover-count{background:#160823dc;color:#fff;border:1px solid #ffffff8c;box-shadow:0 3px 10px #250a3a20;backdrop-filter:blur(6px);font-size:13px}
+.works-page :is(.works-card-actions button,.works-new){transition:transform .18s,box-shadow .18s,background .18s;box-shadow:0 3px 0 #651d9b1c;border:2px solid white!important;border-radius:10px}
+.works-page .works-card-actions .secondary{background:#100519!important;color:white!important}
+.works-page .works-card-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+.works-page :is(button,a):focus-visible{outline:2px solid #a234fd;outline-offset:3px}
+.works-page .works-print-dialog .works-cover{background:#f0e2fc}
+@media(hover:hover) and (pointer:fine){body .mn-links>a:hover,body .mn-links>button:hover{background:#ffffffc4;border-color:#e1c5f2;transform:translateX(2px)}body .mn-links :is(a,button):hover i{transform:translate(2px,-2px)}body .mn-close:hover{background:#ead6fa;transform:rotate(6deg)}.works-page .works-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px #32104c19;border-color:#d8b2f2}.works-page :is(.works-card-actions button,.works-new):hover{transform:translateY(-2px);box-shadow:0 7px 16px #8121c72b}.works-page .works-card-actions .secondary:hover{background:#29133a!important}}
+body .mn-links :is(a,button):active,.works-page :is(.works-card-actions button,.works-new):active{transform:scale(.98)}
+@media(max-width:760px){.works-page #works-main{padding:26px 18px 40px}.works-page .works-heading{gap:12px;align-items:center}.works-page .works-heading>div{min-width:0}.works-page .works-heading h1{font-size:28px}.works-page .works-new{font-size:14px;padding:10px 12px;flex:none}.works-page .works-list{gap:12px}.works-page .works-card{border-radius:15px}.works-page .works-card-body{padding:12px 10px}.works-page .works-card h2{font-size:15px;line-height:1.4;min-height:42px}.works-page .works-cover{height:214px;padding:20px 16px 30px}.works-page .works-card-actions{gap:6px;margin-top:14px}.works-page .works-card-actions>button{font-size:14px;min-height:44px;padding:0 3px}.works-page .works-cover-count{left:8px;bottom:8px;padding:4px 7px;min-height:27px;max-width:calc(100% - 16px)}}
+@media(max-width:350px){.works-page .works-heading{flex-wrap:wrap}.works-page .works-list{grid-template-columns:1fr}.works-page .works-card h2{min-height:0}.works-page .works-cover{height:245px}}
+@media(max-height:700px){body .mn-links{padding-block:12px;gap:2px}body .mn-links>a,body .mn-links>button{min-height:46px;padding-block:9px}body .mn-drawer-footer{padding-top:14px}body .mn-drawer-footer p{margin-top:14px}}
+@media(prefers-reduced-motion:reduce){body .mn-links>a,body .mn-links>button,body .mn-links i,body .mn-close,body .mn-language button,.works-page .works-card,.works-page .works-card-actions button,.works-page .works-new{transition:none!important;transform:none!important}}

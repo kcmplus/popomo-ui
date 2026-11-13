@@ -1,0 +1,28 @@
+/* Checkout and order history: shared violet / near-black palette. */
+body.checkout-page{--ink:#100519;--muted:#786785;--paper:#faf6ff;--mint:#f0e4fc;--pink:#a234fd;--line:#dfcceb;--button-main:#100519;--button-focus:#a234fd;color:#100519;background:#faf6ff}
+.checkout-page :is(.checkout-product,.checkout-summary,.order-metadata,.fulfillment-panel,.checkout-orders article){color:#100519;background:#fff;border-color:#dfcceb}
+.checkout-page :is(.checkout-cover,.order-cover-link,.checkout-orders article>img){background:#efe3fa}
+.checkout-page .checkout-cover img{filter:drop-shadow(4px 8px 11px #24083b22)}
+.checkout-page :is(.checkout-steps i,.checkout-success-mark,.payment-success-icon){background:#ead7fa;color:#7021b0}
+.checkout-page .checkout-steps [aria-current=step] i{background:#a234fd;color:white}
+.checkout-page :is(.checkout-payment-method,.order-card>header){background:#f0e4fc;border-color:#d9bced;color:#100519}
+.checkout-page .fulfillment-options>button{background:#ffffffb8;border-color:#decbea;color:#100519}
+.checkout-page .fulfillment-options>button:hover{background:#f7edff;border-color:#b569eb}
+.checkout-page .fulfillment-options>button[aria-pressed=true]{background:#eedbff;border-color:#a234fd;color:#100519;box-shadow:inset 0 0 0 1px #a234fd}
+.checkout-page :is(.fulfillment-device,.fulfillment-address-summary){border-color:#dfcceb}
+.checkout-page :is(input:not([type=checkbox]),select,textarea){background:#fcf9ff;border-color:#d9c5e8;color:#100519;caret-color:#7021b0;accent-color:#a234fd}
+.checkout-page :is(input,textarea)::placeholder{color:#82718f;opacity:1}
+.checkout-page :is(input,select,textarea,button,a):focus-visible{outline:2px solid #a234fd;outline-offset:3px}
+.checkout-page .orders-search:focus-within{outline:2px solid #a234fd;outline-offset:2px}
+.checkout-page input:autofill{background:#f6edff;box-shadow:0 0 0 1000px #f6edff inset;color:#100519;caret-color:#7021b0}
+.checkout-page input:-webkit-autofill,.checkout-page input:-webkit-autofill:hover,.checkout-page input:-webkit-autofill:focus{border-color:#d9c5e8;-webkit-box-shadow:0 0 0 1000px #f6edff inset;-webkit-text-fill-color:#100519;caret-color:#7021b0}
+.checkout-page input[type=checkbox]{accent-color:#a234fd}
+.checkout-page :is(.fulfillment-tag,.fulfillment-tag.is-delivery,.checkout-order-status,.checkout-order-status.is-paid){background:#f0e3fc;border-color:#d7b5ed;color:#7021b0}
+.checkout-page .fulfillment-tag.is-unset{background:transparent}
+.checkout-page .checkout-footer{background:#faf6fff5;border-color:#dfcceb}
+.checkout-page :is(.payment-success-dialog,.printed-confirm-dialog){background:#faf6ff;color:#100519;border-color:#dfcceb}
+.checkout-page :is(.payment-success-dialog,.printed-confirm-dialog)::backdrop{background:#15051f70}
+.checkout-page .checkout-success-actions a:not(.primary){background:#100519;border-color:#100519;color:white}
+.checkout-page :is(.checkout-receipt small,.checkout-shipping small){color:#786785}
+.checkout-page .orders-tabs [aria-pressed=true]{background:#a234fd;color:white}
+.checkout-page #checkout-error{color:#7021b0}

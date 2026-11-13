@@ -1,0 +1,13 @@
+/* Background plates supplied by the user from the Aimo reference. */
+body.home-page .v2-hero{background:#e8d7fa url('assets/backgrounds/bg-ss1-h1-.webp') center top/cover no-repeat}
+body.home-page .v2-hero:before{content:none;background:none;filter:none;mix-blend-mode:normal}
+body.home-page .hero-grid{display:none}
+body.home-page .v2-curve{background:#fff}
+body.home-page .v2-studio{background-color:#fff;background-image:linear-gradient(180deg,#fff 0%,#ffffffb3 12%,#ffffff00 40%,#ffffff00 65%,#fff 100%),url('assets/backgrounds/bg-ttm-team.webp');background-position:center top,center center;background-size:100% 100%,cover;background-repeat:no-repeat}
+body.home-page .faq-background{background:#f5edfa url('assets/backgrounds/bg-faq-h1.webp') center center/cover no-repeat}
+body.home-page .faq-background .faq{background:transparent;margin-bottom:0}
+body.home-page .faq-background .faq details{border-color:#bda0d357}
+body.home-page .faq-background .faq summary{color:#07000e}
+body.home-page .faq-background .faq details p{color:#372c3d}
+body.home-page footer.wrap{border-top:0}
+@media(max-width:760px){body.home-page .v2-hero{background-size:auto 100%;background-position:center top}body.home-page .v2-studio{background-size:100% 100%,auto 100%;background-position:center top,center center}body.home-page .faq-background{background-size:auto 100%;background-position:58% center}body.home-page .faq-background .faq{padding-top:55px;padding-bottom:55px}}

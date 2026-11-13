@@ -1,0 +1,4 @@
+const key='popomo-account';export const defaultAvatar='./assets/avatars/avatar-1-v30.svg';
+export function getProfile(){try{const value=JSON.parse(localStorage.getItem(key)||sessionStorage.getItem(key)||'null');if(value&&/^\.\/assets\/avatars\/avatar-[1-4]\.svg$/.test(value.avatar||''))value.avatar=value.avatar.replace('.svg','-v30.svg');return value?{nickname:'',avatar:defaultAvatar,giftCredits:5,monthlyCredits:0,...value}:null;}catch{return null;}}
+export function saveProfile(profile){localStorage.setItem(key,JSON.stringify(profile));sessionStorage.setItem(key,JSON.stringify(profile));window.dispatchEvent(new Event('popomo-profile-change'));return profile;}
+export function clearProfile(){localStorage.removeItem(key);sessionStorage.removeItem(key);window.dispatchEvent(new Event('popomo-profile-change'));}

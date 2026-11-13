@@ -1,0 +1,7 @@
+/* All interface fallbacks share one violet/near-black palette. Artwork is unchanged. */
+:root,body{--ink:#100519;--muted:#786185;--paper:#faf6ff;--line:#dfc9ef;--mint:#efe3fa;--pink:#a234fd;--button-main:#100519;--button-main-hover:#8b20e8;--button-support:#100519;--button-support-hover:#29133b;--button-focus:#a234fd;--button-ink:#100519}
+body :is(.profile-verified,.profile-credits>div,.account-avatar,.success-ring){background-color:#ead7fa;color:#7021b0}
+body :is(.login-success,.avatar-dialog,.mn-info){color:#100519}
+body :is(.login-success,.avatar-dialog)::backdrop{background:#19062466}
+body .avatar-options [aria-pressed=true]{border-color:#a234fd;background-color:#ead7fa}
+body input:-webkit-autofill{-webkit-text-fill-color:#100519;caret-color:#7021b0}

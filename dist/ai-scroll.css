@@ -1,0 +1,11 @@
+/* Scroll-linked paint is limited to the two heading lines and one SVG. */
+.v2-ai .ai-text h2.ai-scroll-title{line-height:1.38}
+.v2-ai .ai-text h2 .ai-reveal-line{display:block;width:fit-content;max-width:100%;--reveal-fill:0%;color:transparent;background:linear-gradient(90deg,#fff 0 var(--reveal-fill),rgba(255,255,255,.22) var(--reveal-fill) 100%);background-clip:text;-webkit-background-clip:text}
+.v2-ai .ai-text h2 .ai-reveal-accent{color:transparent;background:linear-gradient(90deg,#bf75ff 0 var(--reveal-fill),rgba(191,117,255,.24) var(--reveal-fill) 100%);background-clip:text;-webkit-background-clip:text}
+.ai-scroll-rosette{position:absolute;z-index:4;width:112px;height:112px;left:43%;top:44%;color:#b45dff;pointer-events:none;transform-origin:center;animation:none}
+@media(min-width:761px) and (max-width:1150px){.ai-scroll-rosette{width:90px;height:90px;left:36%;top:48%}}
+@media(max-width:760px){.ai-scroll-rosette{width:76px;height:76px;left:39%;top:45%}.v2-ai .ai-text h2.ai-scroll-title{line-height:1.35}}
+@media(prefers-reduced-motion:reduce){.v2-ai .ai-text h2 .ai-reveal-line{--reveal-fill:100%!important}.ai-scroll-rosette{transform:none!important}}
+@media(min-width:1151px){.ai-scroll-rosette{width:100px;height:100px;left:36%;top:44%}}
+@media(max-width:760px){.v2-ai .ai-source{margin:0;width:110px;left:0;top:30px}.v2-ai .ai-source img{height:135px}.v2-ai .ai-result{width:180px;right:0;top:25px}.ai-scroll-rosette{width:64px;height:64px;left:30%;top:49%}}
+@media(max-width:760px){.v2-ai .ai-source figcaption{font-size:10px;letter-spacing:.3px;white-space:nowrap}}

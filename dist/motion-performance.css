@@ -1,0 +1,13 @@
+/* Keep the visual design, move continuous motion off the per-frame JS/style path. */
+body.home-page .v2-fan.hero-art{transform:none!important;will-change:auto;contain:layout style}
+body.home-page .v2-fan .fan-case{translate:none!important;rotate:none!important;animation:none!important;transition:none!important;will-change:auto;contain:layout style}
+body.home-page .v2-fan .fan-case .phone{box-shadow:3px 12px 20px #36115426;animation:none!important}
+body.home-page .v2-fan .fan-case .camera{filter:none!important;background:#d8bfeb;box-shadow:0 2px 3px #0003}
+body.home-page .hero-orbit>i,body.home-page .hero-orbit>b,body.home-page .hero-orbit>em{offset-path:none!important;offset-distance:0!important;animation:none!important;top:0;left:0;box-shadow:0 2px 5px #36115433}
+body.home-page .site-header.site-header{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:linear-gradient(110deg,#fbf7fff2,#ecddfaf0)!important;box-shadow:inset 0 0 12px #fff,0 3px 0 #26133814,0 6px 18px #601ba70b}
+body.home-page .fan-spark,body.home-page .ai-spark{animation:perf-spark 32s linear infinite}
+body.home-page .v2-ai.is-motion-paused .ai-spark{animation-play-state:paused}
+body.home-page .fan-case:hover .phone,body.home-page .fan-case:focus-visible .phone{box-shadow:3px 16px 22px #5d00f72e}
+@keyframes perf-spark{to{transform:rotate(360deg)}}
+@media(max-width:760px){body.home-page .v2-fan .fan-case .phone{box-shadow:2px 7px 12px #36115422}body.home-page dialog::backdrop{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:#16042470}body.home-page .v2-ai .ai-source,body.home-page .v2-ai .ai-result{box-shadow:3px 8px 15px #0002}}
+@media(prefers-reduced-motion:reduce){body.home-page .fan-spark,body.home-page .ai-spark{animation:none!important}}

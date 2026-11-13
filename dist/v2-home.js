@@ -1,0 +1,6 @@
+(()=>{
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ document.querySelector('#reset-preview').addEventListener('click',()=>{zoom.value=100;position.value=50;adjust();});
+ const looks={pet:{original:'assets/pet.png',result:'flow-assets/ai/pet-pop-stickers.webp',zh:'宠物波普风格效果',en:'Pet pop art style'},portrait:{original:'flow-assets/examples/90dbab20f037f390.webp',result:'flow-assets/examples/5893827d2a79f471.webp',zh:'动漫人像风格效果',en:'Anime portrait style'},travel:{original:'flow-assets/examples/624bd6c7c972b1a2.webp',result:'flow-assets/examples/29b10eb3433ae8f3.webp',zh:'旅行水彩风格效果',en:'Travel watercolor style'}};
+ document.querySelectorAll('[data-ai-look]').forEach(button=>button.addEventListener('click',()=>{const look=looks[button.dataset.aiLook];document.querySelectorAll('[data-ai-look]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));const source=document.querySelector('#ai-original'),result=document.querySelector('#ai-result');source.src=look.original;result.src=look.result;result.alt=document.documentElement.lang.startsWith('en')?look.en:look.zh;if(!reduced.matches)result.animate([{opacity:.3,transform:'scale(1.03)'},{opacity:1,transform:'scale(1)'}],{duration:400,easing:'ease-out'});}));
+})();

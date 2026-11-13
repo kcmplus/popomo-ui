@@ -1,0 +1,59 @@
+/* v16: static Aimo texture, restrained glass, no continuously animated blur. */
+body[data-flow-step=design]{background:linear-gradient(125deg,#faf6ff92,#f0ddff66),url('assets/backgrounds/bg-ss1-h1-.webp') center top/cover no-repeat #f0e2fb}
+body[data-flow-step=design] .case-editor{--mint:#efe0fb;--paper:#faf6ff}
+body .case-editor .ed-top h1{color:#170725}
+body .case-editor .ed-model{padding:6px 10px;background:#ffffff70;border:1px solid #ffffffd9;border-radius:99px;color:#6b3f8d;box-shadow:inset 0 1px 0 #fff9,0 2px 8px #4d137009}
+body .case-editor .ed-workspace .ed-canvas{background:radial-gradient(#a970d52b .7px,transparent .7px) 0 0/16px 16px,radial-gradient(ellipse at 8% 10%,#fff9,transparent 60%),radial-gradient(ellipse at 96% 90%,#c287ff38,transparent 65%),linear-gradient(125deg,#f8edff99,#e9cefa70);border-color:#fff;box-shadow:inset 0 1px 0 #fff,0 8px 30px #6c35970b;backdrop-filter:none}
+body .case-editor .ed-workspace .ed-canvas .ed-phone{filter:drop-shadow(0 10px 17px #4b176321)}
+body .case-editor .ed-photo-empty{background:linear-gradient(130deg,#f8edffdc,#ead4f7d9);color:#170725}
+body .case-editor .ed-stage-toolbar button{background:#ffffff9c!important;border-color:#fff!important;box-shadow:inset 0 1px 0 #fff,0 2px 8px #4910710b}
+body .case-editor .ed-tools{background:#ffffff80!important;border:1px solid #fff;box-shadow:inset 0 1px 0 #fff,0 10px 30px #4a126612;backdrop-filter:blur(10px) saturate(1.06)}
+body .case-editor .ed-tool-body{background:transparent}
+body .case-editor .ed-tool-dock{background:#f9f1ff8c;border-top-color:#fff;box-shadow:inset 0 1px 0 #fff7}
+body .case-editor .ed-tool-dock [role=tab][aria-selected=true]{background:linear-gradient(135deg,#c084fb35,#fff7);box-shadow:inset 0 0 0 1px #fff9,0 2px 8px #6e28950a;color:#7021b0}
+body .case-editor .ed-base-options button,body .case-editor .ed-fonts button,body .case-editor .ed-sticker-grid button{background:#ffffff80;border-color:#ffffffdc;box-shadow:inset 0 1px 0 #fff8,0 2px 7px #5c1c7a06}
+body .case-editor .ed-base-options button[aria-pressed=true],body .case-editor .ed-fonts button[aria-pressed=true]{background:linear-gradient(135deg,#c68bff30,#fff8);border-color:#c49ce5;color:#7021b0}
+body .case-editor .ed-text-entry #ed-text-input{background:#ffffffad;border-color:#dfc5ef}
+body .case-editor .ed-object-actions button{background:#ffffffb3;border-color:#fff;box-shadow:0 2px 7px #6c35970b}
+body[data-flow-step=design] #flow-actions{background:#f9f0ffa8;box-shadow:inset 0 1px 0 #fff,0 -5px 18px #5e197608;backdrop-filter:blur(8px)}
+body .ed-fullscreen{background:linear-gradient(125deg,#faf6ff92,#f0ddff66),url('assets/backgrounds/bg-ss1-h1-.webp') center/cover #f0e2fb}
+/* AI sheets sit outside the case editor and need their own palette inheritance. */
+body dialog{--mint:#efe0fb;--paper:#faf6ff;--pink:#a234fd;--line:#e3cfee;--ink:#170725}
+body dialog.ed-ai-dialog{background:linear-gradient(140deg,#fff9,#f4e5ffdd),url('assets/backgrounds/bg-ss1-h1-.webp') center/cover #f6eaff;border-color:#fff;box-shadow:inset 0 1px 0 #fff,0 24px 70px #21052e35}
+body dialog.ed-ai-dialog .ed-dialog-head{background:#fcf7ffb3;border-color:#ffffffbd;box-shadow:inset 0 1px 0 #fff}
+body dialog.ed-ai-dialog .ed-dialog-content{background:transparent}
+body dialog.ed-ai-dialog :is(.ed-ai-generation,.ed-ai-generation-style){background:transparent!important}
+body dialog.ed-ai-dialog :is(.ed-ai-result-image,.ed-ai-image,.ed-ai-before,.ed-ai-working,.ed-ai-pair img){background:linear-gradient(135deg,#f9efffd9,#e6ccf7b3)!important;border:1px solid #ffffffd9;box-shadow:inset 0 1px 0 #fff,0 5px 18px #4d13700a}
+body dialog.ed-ai-dialog :is(.ed-ai-upload-card,.ed-ai-photo-action>button){background:#fff9!important;border-color:#d2b0eb!important;color:#170725}
+body dialog.ed-ai-dialog .ed-ai-upload-card:hover{background:#eedbffcc!important;border-color:#b77cde!important}
+body dialog.ed-ai-dialog .ed-ai-upload-card.has-photo{background:#ffffffb3!important}
+body dialog.ed-ai-dialog :is(.ed-ai-result-actions,.ed-ai-dock){background:#faf3ffb8!important;border-top:1px solid #fff;box-shadow:0 -5px 15px #f5e9ff66}
+body dialog.ed-ai-dialog .ed-ai-view button{background:#ffffffc9;border-color:#fff}
+body dialog.ed-ai-dialog .ed-ai-view [aria-pressed=true]{background:#a234fd!important;color:#fff!important;border-color:#fff!important}
+body dialog.ed-ai-dialog .ed-ai-film [aria-pressed=true]{background:#ecd6fb!important;border-color:#a234fd!important}
+body dialog.ed-ai-dialog .ed-ai-working:before{border-color:#d7b4f0;border-top-color:#a234fd}
+body dialog.ed-ai-dialog .ed-ai-image.is-adjusting .ed-ai-drag-handle{background:#a234fd;box-shadow:0 3px 14px #59129133,0 0 0 6px #ffffff73}
+body dialog.ed-ai-dialog #ed-ai-progress{background:#e8d6f4;color:#a234fd;accent-color:#a234fd}
+body dialog.ed-ai-dialog #ed-ai-progress::-webkit-progress-bar{background:#e8d6f4}
+body dialog.ed-ai-dialog #ed-ai-progress::-webkit-progress-value{background:#a234fd}
+body dialog.ed-ai-dialog #ed-ai-progress::-moz-progress-bar{background:#a234fd}
+body dialog.ed-ai-dialog .ed-ai-progress-header output{color:#8b20e8}
+@media(max-width:760px){
+ body .case-editor .ed-tools{background:#ffffff9c!important;backdrop-filter:blur(6px) saturate(1.03);border:0;border-top:1px solid #fff;box-shadow:0 -5px 18px #5e197608}
+ body .case-editor .ed-workspace .ed-canvas{border:0;box-shadow:inset 0 1px 0 #fff9,inset 0 -1px 0 #fff9}
+ body .case-editor .ed-top{background:#ffffff26}
+ body .case-editor .ed-model{padding:4px 9px;min-height:27px;font-size:12px}
+ body[data-flow-step=design] #flow-actions{background:#f9f0ffb8;backdrop-filter:blur(6px);border-top-color:#fff}
+ body dialog.ed-ai-dialog .ed-ai-result-actions{background:#faf3ffeb!important}
+}
+@media(prefers-reduced-transparency:reduce){
+ body .case-editor .ed-tools,body[data-flow-step=design] #flow-actions{background:#faf6ff!important;backdrop-filter:none}
+}
+
+/* v18: a persistent template action independent of the current tool tray. */
+body .case-editor .ed-stage-toolbar>.ed-change-template{display:inline-flex;align-items:center;justify-content:center;gap:7px;width:auto;height:33px;min-height:33px;padding:6px 11px;border:1px solid #fff!important;border-radius:9px;background:#ffffffb3!important;color:#7021b0!important;box-shadow:inset 0 1px 0 #fff,0 2px 8px #4910710b;pointer-events:auto;cursor:pointer}
+body .case-editor .ed-change-template>span{font-size:13px;line-height:1.2;white-space:nowrap;margin:0}
+body .case-editor .ed-change-template>.ed-icon{width:17px;height:17px}
+body .case-editor .ed-change-template>.ed-icon:last-child{width:13px;height:13px}
+body .case-editor .ed-stage-toolbar>.ed-change-template:hover{background:#ead8ff!important;border-color:#c699e8!important}
+@media(max-width:760px){body .case-editor .ed-stage-toolbar>.ed-change-template{height:29px;min-height:29px;padding:5px 8px;gap:5px}body .case-editor .ed-change-template>span{font-size:12px}body .case-editor .ed-change-template>.ed-icon{width:15px;height:15px}}

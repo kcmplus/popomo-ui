@@ -1,0 +1,37 @@
+/* Short, one-shot motion; content stays readable if JavaScript is unavailable. */
+@keyframes enter{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dialog-enter{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes backdrop-enter{from{opacity:0}to{opacity:1}}
+.title-char{display:inline-block;white-space:pre}
+.hero-copy h1.has-letter-motion{animation:none}
+.draw-arrow .arrow-play{transform-box:fill-box;transform-origin:70% 70%}
+.draw-arrow .arrow-tip{transform-box:fill-box;transform-origin:75% 80%}
+@media(prefers-reduced-motion:no-preference){
+ .hero-copy>.eyebrow{animation:enter .65s both}
+ .hero-copy h1{animation:enter .65s .08s both}
+ .hero-copy .intro{animation:enter .65s .16s both}
+ .hero-actions,.upload-note{animation:enter .65s .23s both}
+ .hero-reassurance{animation:enter .65s .3s both}
+ .hero-art{animation:enter .85s .12s both}
+ dialog[open]{animation:dialog-enter .24s cubic-bezier(.2,.7,.2,1) both}
+ dialog[open]::backdrop{animation:backdrop-enter .2s both}
+ .reveal-wait{opacity:0;transform:translateY(18px)}
+ .reveal-in{opacity:1;transform:translateY(0);transition:opacity .6s,transform .6s cubic-bezier(.2,.7,.2,1)}
+ .hero-art .polaroid{transform:translate(var(--photo-x,0px),var(--photo-y,0px)) rotate(-10deg);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+ .hero-art .hero-phone{transform:translate(var(--phone-x,0px),var(--phone-y,0px)) rotate(var(--phone-angle,12deg));transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+ .hero-art .draw-arrow{transition:transform .4s}
+ .hero-art:focus-within .draw-arrow{transform:translate(4px,3px)}
+ .btn svg,.btn>span:last-child,.browse span,.card-arrow{transition:transform .2s}
+ .btn:hover>span:last-child{transform:translate(3px,-2px)}
+ .btn:hover svg{transform:translateY(-2px)}
+ .browse:hover span{display:inline-block;transform:translateX(4px)}
+ .design-art:hover .card-arrow{transform:rotate(45deg)}
+}
+.sample-button{position:absolute;bottom:25px;left:24px;z-index:4;border:1px solid #dfc9ef;border-radius:30px;background:#faf6ffe8;min-height:36px;padding:0 14px;font-size:13px;display:flex;align-items:center;gap:14px;transition:background .2s}
+.sample-button:hover{background:white}.sample-button:active{transform:translateY(1px)}
+.hero-art .art-index{bottom:8px;font-size:13px}.hero-art .art-star{bottom:69px}
+.drop-hint{position:absolute;inset:10px;border:2px dashed #dfc9ef;border-radius:12px;background:#efe3faf5;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .18s}.drop-hint>span{font-size:45px;font-weight:200}.is-dragover .drop-hint{opacity:1}
+.preview-shortcuts{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}.preview-shortcuts .text-btn{font-size:13px;padding:9px 0;text-decoration:underline;text-underline-offset:4px}.preview-shortcuts>span{font-size:13px;color:var(--button-main, #100519)}.preview-phone{overflow:hidden}.preview-phone .phone-image{transform-origin:center}.preview-tools input[type=range]{min-height:24px;cursor:ew-resize}
+.filters button{transition:background .18s,color .18s}.close-btn{transition:background .18s,transform .18s}.close-btn:hover{transform:rotate(8deg)}
+@media(max-width:760px){.sample-button{left:16px;bottom:24px;font-size:13px;padding:0 12px;min-height:34px}.result-label{bottom:67px;font-size:13px;right:12px}.hero-art .art-star{bottom:65px}.hero-art .art-index{left:18px;bottom:7px}.preview-shortcuts{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal-wait{opacity:1;transform:none}}

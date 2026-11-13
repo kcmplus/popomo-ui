@@ -1,0 +1,124 @@
+{
+  "site": "POPOMO Version 2",
+  "releases": [
+    {
+      "version": 7,
+      "commit": "dc08512fad4e60f68d7a692d71797468303b72b9",
+      "description": "Performance-optimized home with original two-column inspiration section"
+    },
+    {
+      "version": 8,
+      "commit": "8eb52d919cd737e8e61200008c85ec9429abbd85",
+      "description": "Curved creative studio section"
+    },
+    {
+      "version": 9,
+      "commit": "617941553841c2d967d17c01410f60191085fcdb",
+      "description": "Scroll-linked rosette and AI heading"
+    },
+    {
+      "version": 10,
+      "description": "Restore inspiration section to version 7; shared navigation hides on downward scroll and appears on upward scroll"
+    },
+    {
+      "version": 11,
+      "description": "Scroll-linked progressive text reveal for hero, inspiration, collection and FAQ headings; preserve navigation and restored two-column section"
+    },
+    {
+      "version": 12,
+      "description": "Violet hover palette for three home entry buttons, white borders and violet keyboard focus; preserve rotating arrows"
+    },
+    {
+      "version": 13,
+      "description": "Compact phone/color selector and brand/model list; backend catalog owns shape/color assets; violet dialog theme; all three home entries route into the same editor with the relevant background source; fulfillment selected only at checkout"
+    },
+    {
+      "version": 14,
+      "description": "Fix green photo-empty/canvas/review backgrounds; direct print saves current design and creates checkout order without a separate review checkbox; refresh continue-button state after adding a background; preserve final payment confirmation"
+    },
+    {
+      "version": 15,
+      "description": "Viewport-sized app-style editor: canvas plus Base/Stickers/Text dock, compact context controls and review footer, no repeated helper sections, violet UI chrome, keyboard-aware mobile sizing"
+    },
+    {
+      "version": 16,
+      "description": "Remove remaining mint AI result/comparison/upload/progress surfaces; add static Aimo lavender texture, translucent canvas and restrained glass tool panels without layout or workflow changes"
+    },
+    {
+      "version": 17,
+      "description": "US$4 shipping once per delivery order; instant totals on fulfillment switch; 3–4 day delivery estimate; preserve shipping amounts on paid orders"
+    },
+    {
+      "version": 18,
+      "description": "Persistent Change template button at canvas top-left, available with closed tools and fullscreen; clarify existing template action and preserve per-template edits"
+    },
+    {
+      "version": 19,
+      "description": "Draft save success dialog with saved cover and View designs / Print now actions; print creates an order from the saved design without saving a duplicate"
+    },
+    {
+      "version": 20,
+      "description": "Unify checkout, fulfillment, order list/detail and success states with violet/near-black surfaces; remove mint cards, blue autofill and pink focus rings"
+    },
+    {
+      "version": 21,
+      "description": "White order detail panels, lavender cover/status surfaces and violet payment success icon; remove legacy green colors in base checkout styles and refresh stylesheet URLs"
+    },
+    {
+      "version": 22,
+      "description": "Purple-white glass mobile drawer and language controls across pages; lavender saved-design covers, translucent work cards, responsive side-by-side actions and restrained hover/press feedback with reduced-motion support"
+    },
+    {
+      "version": 23,
+      "description": "Remove generic find-a-printer promotion from My orders; retain per-order fulfillment labels and readonly details/navigation"
+    },
+    {
+      "version": 24,
+      "description": "Remove green values from saved-design base CSS, ship a new works-v24 stylesheet URL and inline critical lavender cover/background fallback"
+    },
+    {
+      "version": 25,
+      "description": "Final four-item desktop/mobile navigation with Tutorial/AI and Contact/Partners/Printer submenus; optional privacy-authorized design sharing, Works center and own/public detail views with author/model tags, likes, reuse and print; remove print counts from work cards"
+    },
+    {
+      "version": 26,
+      "description": "Full-viewport mobile navigation, safe-area padding and 44px close target; width-independent slide-out animation"
+    },
+    {
+      "version": 27,
+      "description": "Editor model control opens compact phone/color dialog, applies changes in place and preserves artwork; cancel leaves original model and URL unchanged"
+    },
+    {
+      "version": 28,
+      "description": "Compact violet glass sign-in/verification layout with side-by-side Google/Facebook actions, a one-line mobile gift strip, accessible inputs and themed profile/success surfaces; remove legacy green base colors"
+    },
+    {
+      "version": 29,
+      "description": "Standalone bilingual illustrated tutorial: photo/template/AI backgrounds and DIY, drafts and explicit privacy-authorized sharing, print/redesign and pickup/delivery; connect desktop/mobile How to use and Tutorial navigation"
+    },
+    {
+      "version": 30,
+      "description": "Audit and remove legacy green interface colors from base CSS across account, auth, profile/avatar dialogs, printers, about, editor and common navigation; fresh account base CSS and shared violet fallback tokens; preserve artwork and provider brand icons; recolor built-in avatar backgrounds/hair and migrate legacy built-in avatar URLs without changing uploaded photos"
+    },
+    {
+      "version": 31,
+      "description": "Replace footer social text/arrows with purple Facebook and Instagram SVG logos; preserve social URLs, accessible labels and 44px touch targets"
+    },
+    {
+      "version": 32,
+      "description": "Dedicated violet/white Print locations page with fresh base resources; embed one shared UI palette in all HTML documents and audit reachable dialogs/selected states without altering artwork"
+    },
+    {
+      "version": 33,
+      "description": "作品中心与详情增加作者头像昵称及作品详情入口。"
+    },
+    {
+      "version": 34,
+      "description": "Use explicit detail-page marker and extensionless route matching; allow card body click-through while preserving like action."
+    },
+    {
+      "version": 35,
+      "description": "Normalize desktop and mobile submenu links/actions; Find a printer matches Contact us and Partner with us, remove top-level dot and underline decoration."
+    }
+  ]
+}
